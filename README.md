@@ -1,5 +1,6 @@
 
-https://ci.appveyor.com/api/projects/status/github/ajmal744/Auditing
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/ajmal744/Auditing)]
+
 # Auditing
 
 
