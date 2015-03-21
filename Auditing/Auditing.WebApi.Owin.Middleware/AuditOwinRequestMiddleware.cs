@@ -17,7 +17,7 @@ namespace Auditing.WebApi.Owin.Middleware
 
         public override async Task Invoke(IOwinContext context)
         {
-            var auditor = new Auditor(this._auditRepository, new OwinAuditContextProvider(context, new SystemInfoContextProvider(new AssemblyFileVersionProvider()), context.));
+            var auditor = new Auditor(this._auditRepository, new OwinAuditContextProvider(context, new SystemInfoContextProvider(new AssemblyFileVersionProvider()), "[NAME_OF_COMPONENT]"));
 
             auditor.Write(new OwinRequestStartedEvent());
             try
