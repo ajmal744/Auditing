@@ -27,14 +27,14 @@ namespace Auditing.WebApi.Owin.Middleware
 
         public AuditContext GetContext()
         {
-            return new WebApiRequestAuditContext(this.sourceComponent)
+            return auditContext ?? (auditContext = new WebApiRequestAuditContext(this.sourceComponent)
             {
                 RequestedUrl = this.context.Request.Uri.ToString(),
                 RequestPath = this.context.Request.Path.Value,
                 RequestQueryString = this.context.Request.QueryString.Value,
                 SystemInfo = this.systemInfoContextProvider.GetSystemInfo(),
                 AuditCorrelationId = new AuditCorrelationId(this.auditCorrelationId)
-            };
+            });
         }
     }
 }

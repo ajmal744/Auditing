@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyFileVersionProvider.cs" />
     <Compile Include="AuditContext.cs" />
     <Compile Include="AuditCorrelationId.cs" />
     <Compile Include="AuditEvent.cs" />
