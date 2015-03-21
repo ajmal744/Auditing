@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Auditing.Core
+﻿namespace Auditing.Core
 {
     interface IAuditor
     {

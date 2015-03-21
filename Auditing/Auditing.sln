@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auditing.Core", "Auditing.C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{594EDDD0-1676-4783-A4C4-B4D0597D44BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auditing.WebApi.Owin.Middleware", "Auditing.WebApi.Owin.Middleware\Auditing.WebApi.Owin.Middleware.csproj", "{6F66BEB3-E1A7-463F-9974-B554154A7727}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{3A3A5E61-BB33-4CA5-84AF-535E3A9AB7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A3A5E61-BB33-4CA5-84AF-535E3A9AB7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A3A5E61-BB33-4CA5-84AF-535E3A9AB7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F66BEB3-E1A7-463F-9974-B554154A7727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F66BEB3-E1A7-463F-9974-B554154A7727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F66BEB3-E1A7-463F-9974-B554154A7727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F66BEB3-E1A7-463F-9974-B554154A7727}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
