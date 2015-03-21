@@ -46,6 +46,7 @@
     <Compile Include="IAuditActionContextProvider.cs" />
     <Compile Include="IAuditor.cs" />
     <Compile Include="IAuditRepository.cs" />
+    <Compile Include="IFileVersionProvider.cs" />
     <Compile Include="ISystemInfoContextProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemInfo.cs" />

@@ -12,9 +12,7 @@ namespace Auditing.Core
         {
             Context = context;
             Event = auditEvent;
-            CreatedDateTime = DateTime.UtcNow;
-            CallerThreadId = Thread.CurrentThread.ManagedThreadId;
-            StackTrace = Environment.StackTrace;
+            CreatedDateTime = DateTime.UtcNow;            
         }
 
         public AuditContext Context { get; private set; }
@@ -23,20 +21,14 @@ namespace Auditing.Core
 
         public DateTime CreatedDateTime { get; private set; }
 
-        public string StackTrace { get; private set; }
-
-        public int CallerThreadId { get; private set; }
-
         public override string ToString()
         {
             return
                 string.Format(
-                    @"CreatedDateTime: {0}, Context: {{{1}}}, Event: {{{2}}}, CallerThreadId: {{{3}}}",
+                    @"CreatedDateTime: {0}, Context: {1}, Event: {2}",
                     CreatedDateTime,
                     Context,
-                    Event,
-                    CallerThreadId,
-                    StackTrace);
+                    Event);
         }
     }
 }
